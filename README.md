@@ -38,7 +38,7 @@ gallery.html
         <h1>MY GALLERY - Tamizhan b (25018064)</h1>
         <div class="gallery">
             <div class="galleryitem">
-                <img class="zoom" src="gallery1.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
+                <img class="zoom" src="TAMIL.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
             </div>
             <div class="galleryitem">
                 <img class="zoom" src="gallery2.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
@@ -115,7 +115,7 @@ function mouseout()
 
 ```
 # OUTPUT:
-![gallery1](https://github.com/user-attachments/assets/b9082e63-0a93-4de3-90dd-41b82d6cc0cf)
+![TAMIL](https://github.com/user-attachments/assets/25345015-07f6-46c9-9a3b-f6b4b3d78dfe)
 
 ![gallery2](https://github.com/user-attachments/assets/dea74909-975a-4d0b-a5ea-bc523184f175)
 
