@@ -35,8 +35,7 @@ gallery.html
     </head>
     <body>
         <div class="photos">
-            <img src="vj5.jpeg" id="image1">
-            <img src="me.JPG"id="image2"> 
+            <img src="vj5.jpeg" id="image1"> 
             <img src="vj1.jpeg" id="image3">
             <img src="vj3.jpeg" id="image4">
             <img src="vj4.jpeg" id="image5">
@@ -133,6 +132,7 @@ img2.addEventListener("mouseout",()=>
 
 ```
 # OUTPUT:
-Screenshot 2025-10-06 101925.png
+<img width="1895" height="922" alt="Screenshot 2025-10-15 110716" src="https://github.com/user-attachments/assets/dba83546-6752-4c7d-adf6-f9976c1dbc22" />
+
 # RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
