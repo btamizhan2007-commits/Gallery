@@ -26,105 +26,113 @@ Publish the website in the given URL.
 # PROGRAM :
 
 ```
-
 gallery.html
+
 <html>
     <head>
         <title>Gallery</title>
-        <link rel="stylesheet" href="style1.css">
-        <script src="style2.js"></script>
+        <link rel="stylesheet" href="gallery.css">
     </head>
     <body>
-        <h1>MY GALLERY - Tamizhan b (25018064)</h1>
-        <div class="gallery">
-            <div class="galleryitem">
-                <img class="zoom" src="TAMIL.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
-            </div>
-            <div class="galleryitem">
-                <img class="zoom" src="gallery2.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
-            </div>
-            <div class="galleryitem">
-                <img class="zoom" src="gallery3.jpg" onmouseover="mousein()" onmouseout="mouseout()" id ="photo">
-
-            </div>
-            <div class="galleryitem">
-                <img class="zoom" src="gallery4.jpg" onmouseover="mousein()" onmouseout="mouseout()"id="photo">
-
-            </div>
-            <div class="galleryitem">
-                <img class="zoom" src="gallery5.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="Photo">
-            </div>
+        <div class="photos">
+            <img src="vj5.jpeg" id="image1">
+            <img src="me.JPG"id="image2"> 
+            <img src="vj1.jpeg" id="image3">
+            <img src="vj3.jpeg" id="image4">
+            <img src="vj4.jpeg" id="image5">
         </div>
-        <footer class="copyrights">
-            &copy; TAMIZHAN B (25018064)
-        </footer>
+        <h1 align="center">&copy;Image Gallery|Designed by:</h1>
+        <h2 align="center">TAMIZHAN B (25018064)</h2>
+        <script src="gallery.js"></script>
     </body>
 </html>
 
-style1.css
-body {
-    background-color: rgb(133, 16, 35);
-    text-align: center;
-    margin-top: 50px;
-}
+gallery.css
 
-.gallery {
-    display: flex;
-    gap: 20px;
-    padding-top: 50px;
-    justify-content: center;;
+*{
+    margin: 0;
+    border:0;
 }
-
-.galleryitem {
-    cursor: pointer;
-    text-align: center;
-    width: 200px;
-    padding: 20px;
+body{
+    background: linear-gradient(135deg, black, grey, white);
 }
-
-.galleryitem img {
-    width: 230px;
-    height: 300px;
+.photos{
+    
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
 }
-
-.copyrights{
-    width: 1510px;
-    height: 20px;
-    background-color: rgb(176, 51, 162);
-    text-align: center;
-    top: 130px;
-    left: -20px;
+img{
     position: relative;
+    top: 80px;
+    width: 300px;
+    left:60px;
+    height: 400px;
+    border: outset 10px burlywood;
+    transition: transform 0.7s ease;
+    cursor: pointer;
 }
 
-style2.js
-style2.js
-
-function mousein()
-{
-    document.getElementById("Photo").style.width="250";
-    document.getElementById("Photo").style.height="350";
+h1,h2{
+    position: relative; 
+    top: 400px;
+    left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: brown;
+    
 }
 
-function mouseout()
+gallery.js
+
+const img1=document.getElementById("image1");
+img1.addEventListener("mouseover",()=>
 {
-    document.getElementById("Photo").style.width="230";
-    document.getElementById("Photo").style.height="300";
-    
- }
+    img1.style.transform="scale(1.2)"
+});
+img1.addEventListener("mouseout",()=>
+{
+    img1.style.transform="scale(1)"
+});
+const img3=document.getElementById("image3");
+img3.addEventListener("mouseover",()=>
+{
+    img3.style.transform="scale(1.2)"
+});
+img3.addEventListener("mouseout",()=>
+{
+    img3.style.transform="scale(1)"
+});
+const img4=document.getElementById("image4");
+img4.addEventListener("mouseover",()=>
+{
+    img4.style.transform="scale(1.2)"
+});
+img4.addEventListener("mouseout",()=>
+{
+    img4.style.transform="scale(1)"
+});
+const img5=document.getElementById("image5");
+img5.addEventListener("mouseover",()=>
+{
+    img5.style.transform="scale(1.2)"
+});
+img5.addEventListener("mouseout",()=>
+{
+    img5.style.transform="scale(1)"
+});
+const img2=document.getElementById("image2");
+img2.addEventListener("mouseover",()=>
+{
+    img2.style.transform="scale(1.2)"
+
+});
+img2.addEventListener("mouseout",()=>
+{
+    img2.style.transform="scale(1)"
+});
 
 ```
 # OUTPUT:
-![TAMIL](https://github.com/user-attachments/assets/25345015-07f6-46c9-9a3b-f6b4b3d78dfe)
-
-![gallery2](https://github.com/user-attachments/assets/dea74909-975a-4d0b-a5ea-bc523184f175)
-
-![gallery3](https://github.com/user-attachments/assets/081cd58a-47a7-481a-8e68-fb57c93cb48b)
-
-![gallery4](https://github.com/user-attachments/assets/593e4778-2fa2-4bfc-b294-5a81a074fe69)
-
-![gallery5](https://github.com/user-attachments/assets/9c2f49fb-900e-4fa7-9e9a-6d2829858135)
-
-
+Screenshot 2025-10-06 101925.png
 # RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
